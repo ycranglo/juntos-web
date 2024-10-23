@@ -3,15 +3,23 @@ import hanni from '../public/hanni.jpg';
 
 export default function Navbar() {
   return (
-    <div className='border-2 border-purple-900 flex items-center'>
-      <div className='overflow-hidden rounded-full w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20'>
-     <Image
-      className='overflow-hidden rounded-full w-12 h-12 md:w-16 md:h-16 lg:w-12 lg:h-12'
+    <div className="flex lg:pt-8 border justify-between w-full"> {/* Ensured full width */}
+      <div className=""> {/* Added padding */}
+        <Image
           src={hanni}
           alt="Picture of the author"
-          placeholder="blur"
-          layout="responsive"
-          objectFit="cover"
+          width={50}
+          height={50}
+          className="rounded-full"
+        />
+      </div>
+      <div className=""> {/* Added padding */}
+        <Image
+          src={hanni}
+          alt="Picture of the author"
+          width={50}
+          height={50}
+          className="rounded-full"
         />
       </div>
     </div>
